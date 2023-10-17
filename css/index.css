@@ -1,0 +1,517 @@
+:root{
+    --primariy-color: #07a53d;
+    --secondary-color: gold;
+    --primariy-white: white;
+    --primariy-font-weight:600;
+    --secondary-font-weight:600;
+    --default-margin: 35px; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: 0.85;
+    animation: bgcol 2s linear 2s infinite;
+}
+
+@keyframes bgcol {
+    0%{
+        background-color: orangered;
+    }
+    25%{ background-color: rgb(237, 237, 124);}
+    50%{background-color: rgb(110, 110, 223);}
+    75%{background-color: rgb(227, 129, 227);}
+    100%{background-color: rgb(224, 185, 88);}
+    100%{background-color: rgb(220, 91, 117);}
+    50%{background-color: cornflowerblue;}
+    
+}
+
+header{
+    height: 100px;
+    background-color: var(--primariy-color);
+}
+
+header nav{
+    height: 70px;
+    margin: auto var(--default-margin);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+   height: 200px;
+   width: 200px;
+   position: relative;
+   top: 25px;
+   
+}
+
+.link a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--primariy-white);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.link a.active{
+    color:var(--secondary-color) !important;
+    border-radius:5px soild var(--secondary-color) ;
+}
+
+.link a:hover{
+    color: var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.life_style{
+  height: 500px;
+  width: 100%;
+  background-image: url('../image/home\ background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.inner_life_style{
+    text-align: center;
+    height: 500px;
+    background-color:rgba(0,0,0,0.4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    /* font-size: 20px; */
+    font-weight: 500;
+    color: var(--primariy-white);
+    margin: 15px auto;
+}
+.background h1{
+    font-size: 50px;
+}
+.background p{
+    font-size:40px;
+}
+
+.btn{
+    font-size: 20px;
+    text-decoration: none;
+    background-color:var(--secondary-color) ;
+    color: var(--primariy-white);
+    font-weight: 500;
+    padding: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius:50% ;
+    outline: 0;  
+}
+
+.parterns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.inner_partern{
+    height:80px ;
+    width: 50%;
+    border:2px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    top: -60px;
+    background-color: var(--primariy-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about{
+    border: 2px solid #ccc;
+}
+
+.inner_about{
+    margin: var(--default-margin);
+    display: flex;
+    justify-content: space-between;
+}
+.about_right,.about_left{
+    width: 45%;
+    font-size: 25px;
+}
+
+.about_left h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: var(--secondary-font-weight);
+  color: rgba(0,0,0,0.4);
+  padding-bottom: 40px;  
+}
+.content span{
+    font-size: 30px;
+    padding: 0 5px;
+    color: rgba(0,0,0,0.4);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: var(--secondary-font-weight);
+}
+.content{
+    padding-bottom: 20px;
+}
+.carrer{
+    padding: 20px;
+}
+.carrer span{
+font-size: 30px;
+color: rgba(0,0,0,0.4);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: var(--secondary-font-weight);
+}
+.comp span{
+    font-size: 30px;
+    color: rgba(0,0,0,0.4);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: var(--secondary-font-weight);
+}
+
+.inner_about{
+    margin: var(--default-margin);
+}
+
+
+.inner_services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.inner_services h4{
+    font-size:20px ;
+}
+
+.offer_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.offer_img{
+    width: 25%;
+
+}
+.offer_img p{
+    font-size: 25px;
+}
+.offer_wrap{
+    margin: var(--default-margin);
+}
+.offer_img h3{
+    font-size: 25px;
+
+}
+.job_list{
+    border: 2px solid #ccc;
+}
+.inner_job_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--default-margin);
+}
+.job p{
+    position: relative; 
+    left: 70px;
+    font-size:20px ;
+}
+
+.job h3{
+    padding-top: 20px;
+    font-size:25px ;
+    font-weight: 600;
+    position: relative; 
+   left: 70px;
+
+}
+.job_link{
+    position: relative;
+    top: 20px;
+    left: 70px;
+    
+}
+.job_link a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.btn_see button{
+    margin-right:200px ;
+    position: relative;
+    top: 20px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    padding: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slack{
+    margin: 85px;
+    border: 3px solid black;
+    width: 20%; 
+    height:450px;
+    border-radius: 10px; 
+
+}
+
+.img_slack{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px;
+
+}
+.img_slack p{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    
+
+}
+.pro_des h3{
+    margin-left: 20px;
+    padding: 15px;
+}
+
+
+.full{
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+.green{
+    padding: 10px;
+    background-color: #07a53d;
+    border-radius: 20px;
+}
+.orange{
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.veiw{
+    display: flex;
+    justify-content: space-around;
+}
+.org{
+    padding: 10px;
+    border: 5px solid orange;
+    border-radius:25px ;
+    
+}
+.ger{
+    padding: 10px;
+    border: 5px solid green;
+    border-radius:25px ;
+}
+.parent_slack_wrap{
+    display: flex;
+    
+}
+.wrap_row{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer_container{
+    border: 1px solid #ccc;
+    background-color: #07a53d;
+    height: 10%;
+
+}
+.head h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(245, 245, 245);
+
+}
+.text_row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: var(--default-margin);
+  
+}
+.text_row{
+    border-bottom: 1px solid #f8f8ff;
+}
+
+.rotate-img{
+    position:static;
+    animation: rotate 1s linear 2s infinite ;
+}
+
+.parterns{
+    position: relative;
+    top: 10px;
+    animation: y 1s linear 2s infinite;
+}
+
+@keyframes y{
+    from{top: 10px;}
+    to{
+        top: -20px;
+    }
+}
+
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .background p{
+        font-size: 15px;
+    }
+    .background h1{
+        font-size: 25px;
+    }
+
+    .slack{
+        width: 80%;
+        height: 500px;
+    }
+    
+    .job_link a{
+        padding: 5px;
+    }
+    
+    
+    .inner_job_list{
+        flex-direction: column;
+    }
+    .parent_slack_wrap{
+        flex-direction: column;
+        
+    }
+
+    
+    .life_style{
+        height: 200px;
+
+}
+
+    .inner_life_style{
+        height: 200px;
+}
+
+    .parterns{
+        height: 40px;
+}
+    .inner_partern{
+        height: 40px;
+}
+    .offer_img p{
+        font-size: 7px;
+}
+    .offer_img h3{
+        font-size: 7px;
+}
+    
+    
+    
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

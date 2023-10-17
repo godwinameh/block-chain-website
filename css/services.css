@@ -1,0 +1,178 @@
+
+:root{
+    --primariy-color: #07a53d;
+    --secondary-color: gold;
+    --primariy-white: white;
+    --primariy-font-weight:600;
+    --secondary-font-weight:600;
+    --default-margin: 35px; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: 0.85;
+    animation: bgcol 2s linear 2s infinite;
+}
+
+header{
+    height: 100px;
+    background-color: var(--primariy-color);
+}
+
+header nav{
+    height: 70px;
+    margin: auto var(--default-margin);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+   height: 200px;
+   width: 200px;
+   position: relative;
+   top: 25px;
+   
+}
+
+.link a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--primariy-white);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.link a.active{
+    color:var(--secondary-color) !important;
+    border-radius:5px soild var(--secondary-color) ;
+}
+
+.link a:hover{
+    color: var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
+}
+/* body of the services */
+.body_head_services{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.body_head_services{
+    font-size: 25px;
+    line-break:5px;
+}
+.body_head_services h1{
+    text-align: center;
+    padding: 25px;
+    color: orange;
+}
+
+.body_container{
+    margin: var(--default-margin);
+}
+.inner_body_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.first_container{
+    font-size: 25px;
+    line-break:5px;
+    padding: 95px;
+    text-align: justify;
+}
+.left_btn{
+    padding: 15px;
+    font-weight:700;
+    color: whitesmoke;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+
+}
+.left_btn{
+    height: 55px;
+    width:200px ;
+    position: relative;
+    top: 15px;
+}
+.first_container h2{
+    text-align: center;
+    padding: 25px;
+    color: orange;
+}
+.img_wrap_right{
+    width: 33%;
+}
+
+.right_note{
+    font-size: 25px;
+    line-break:5px;
+    padding: 95px;
+    text-align: justify;
+}
+.right_note h2{
+    text-align: center;
+    padding: 25px;
+    color: orange;
+}
+.services_footer{
+    height: 400px;
+   background-color: #07a53d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
